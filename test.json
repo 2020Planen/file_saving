@@ -1,0 +1,45 @@
+{
+    "log": [
+        {
+            "moduleName": "ReceiverAPIModule",
+            "timeStamp": "Fri Jan 31 10:45:05 CET 2020"
+        },
+        {
+            "moduleName": "entry",
+            "timeStamp": "Fri Jan 31 10:45:06 CET 2020"
+        },
+        {
+            "moduleName": "routing",
+            "timeStamp": "Fri Jan 31 10:45:06 CET 2020"
+        },
+        {
+            "moduleName": "cvr-enricher",
+            "timeStamp": "Fri Jan 31 10:45:06 CET 2020"
+        },
+        {
+            "moduleName": "cvr-enricher",
+            "timeStamp": "Fri Jan 31 10:45:08 CET 2020"
+        },
+        {
+            "moduleName": "address-enrichment",
+            "timeStamp": "Fri Jan 31 10:45:09 CET 2020"
+        }
+    ],
+    "producerReference": "address",
+    "conditions": [
+        {
+            "field": "number",
+            "action": "greater than",
+            "value": "111",
+            "topic": "exit",
+            "priority": 1
+        }
+    ],
+    "cvrInfo": {
+        "name": "CONVERGENS A/S",
+        "address": "Hvidsværmervej 161",
+        "zipcode": "2610",
+        "city": "Rødovre",
+        "phone": "44522200"
+    }
+}
